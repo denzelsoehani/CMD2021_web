@@ -1,5 +1,81 @@
 /* CSS Document */
 *, *::after, *::before {
-  box-sizing:border-box;  
+  box-sizing:border-box;
 }
 
+@font-face {
+  font-family: Metric;
+  src: url(fonts/Metric_Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Metric, Arial, sans-serif;
+    --main: #333333;
+    --blue: #009AFE;
+    --dark-blue: #0377CC;
+
+    color: var(--main);
+}
+
+p {
+    line-height: 24px;
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+/* ALGEMENE LINK STIJLEN */
+
+a.link_button_main:link, a.link_button_main:visited {
+    color: white;
+    background-color: var(--blue);
+    padding: 0.5em 2em;
+    margin: 0.1em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    display: inline-block;
+}
+
+a.link_button_main:hover, a.link_button_main:active {
+    background-color: var(--dark-blue);
+}
+
+a.link_button_secundair:link, a.link_button_secundair:visited {
+    color: var(--blue);
+    background-color: white;
+    padding: 0.5em 2em;
+    margin: 0.1em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: var(--blue);
+    border-width: 1px;
+    display: inline-block;
+}
+
+a.link_button_secundair:hover, a.link_button_secundair:active {
+    color: var(--dark-blue);
+    border-color: var(--dark-blue);
+}
+
+a.link_simple:link, a.link_simple:visited {
+    color: var(--main);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.link_simple:hover, a.link_simple:active {
+    color: var(--blue);
+}
