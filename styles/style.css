@@ -5,7 +5,8 @@
 
 @font-face {
   font-family: Metric;
-  src: url(fonts/Metric_Regular.ttf);
+  src: url(fonts/Metric_Regular.ttf) format("ttf");
+  src: url(fonts/Metric_Regular.woff) format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -15,12 +16,20 @@ body {
     --main: #333333;
     --blue: #009AFE;
     --dark-blue: #0377CC;
+    --light-grey: #F3F3F3;
+    --green: #009900;
 
     color: var(--main);
+    margin: 0;
 }
 
 p {
-    line-height: 24px;
+    line-height: 1.5em;
+    font-size: 1.2em;
+}
+
+a {
+    font-size: 1.2em;
 }
 
 img {
@@ -29,6 +38,27 @@ img {
 
 h2 {
     font-weight: 300;
+    color: green;
+}
+
+h3 {
+    font-size: 1.375em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+
+header {
+    height: 3.5em;
+}
+
+header img {
+    width: 8em;
 }
 
 /* ALGEMENE LINK STIJLEN */
@@ -40,10 +70,10 @@ a.link_button_main:link, a.link_button_main:visited {
     margin: 0.1em;
     text-align: center;
     text-decoration: none;
-    border-radius: 25px;
+    border-radius: 1.389em;
     border-style: solid;
     border-color: white;
-    border-width: 1px;
+    border-width: 0.056em;
     display: inline-block;
 }
 
@@ -58,10 +88,10 @@ a.link_button_secundair:link, a.link_button_secundair:visited {
     margin: 0.1em;
     text-align: center;
     text-decoration: none;
-    border-radius: 25px;
+    border-radius: 1.563em;
     border-style: solid;
     border-color: var(--blue);
-    border-width: 1px;
+    border-width: 0.056em;
     display: inline-block;
 }
 
@@ -71,6 +101,7 @@ a.link_button_secundair:hover, a.link_button_secundair:active {
 }
 
 a.link_simple:link, a.link_simple:visited {
+    display: block;
     color: var(--main);
     text-decoration: none;
     font-weight: bold;
@@ -78,4 +109,185 @@ a.link_simple:link, a.link_simple:visited {
 
 a.link_simple:hover, a.link_simple:active {
     color: var(--blue);
+}
+
+/* SHOWCASE MET GRIJZE BG STIJLEN */
+
+.gradient_block {
+    display: block;
+    position: relative;
+    padding-bottom: 8em; /* 6em */
+}
+
+.gradient_block_text {
+    background-color: var(--main);
+    color: white;
+    padding-left: 0.7em;
+    background: linear-gradient(0deg, rgba(51,51,51,1) 75%, rgba(51,51,51,0.2) 100%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.gradient_block_text h2{
+    color: white;
+}
+
+/* IN PAGE NAV HOME */
+
+.inpage_nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.inpage_nav li {
+    width: 47%;
+    background-color: white;
+    padding: 2em;
+    margin: 1.5%;
+    text-align: center;
+    box-shadow: 0em 0em 0.5em lightgrey;
+    border-radius: 0.3em;
+    flex-grow: 1;
+}
+
+.inpage_nav a {
+    text-decoration: none;
+    color: var(--green);
+}
+
+.inpage_nav img {
+    display: block;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+}
+
+/* SECTION & ARTIKELEN STIJLEN */
+
+.even {
+    background-color: var(--light-grey);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+}
+
+.oneven {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+}
+
+.highlight, .highlight_download {
+    padding: 0.7em;
+}
+
+article {
+    background-color: white;
+    margin: 1em 0;
+    padding-bottom: 1.5em;
+}
+
+.news h3, .news p, .news a{
+    margin: 0.7em 1em 0.7em 0.7em;
+}
+
+.highlight article {
+    text-align: center;
+    border-color: lightgrey;
+    border-style: solid;
+    border-width: 0.056em;
+    padding: 3em;
+}
+
+.img_article {
+    padding: 0 3em;
+}
+
+.highlight_download article {
+    text-align: left;
+    border-color: lightgrey;
+    border-style: solid;
+    border-width: 0.056em;
+    padding: 0.7em;
+}
+
+p.speed{
+    margin-top: -1.2em;
+    font-size: 1.375em;
+    font-weight: 100;
+}
+
+/* ZAKELIJKE LINKS */
+
+.list {
+    background-color: white;
+    margin-bottom: 1em;
+    padding: 0.5em 0;
+}
+
+.list li {
+    margin: 1.5em 0.7em;
+    padding-bottom: 0.7em;
+    border-bottom: 0.063em solid;
+    border-color: lightgrey;
+}
+
+.list a:link, .list a:visited {
+    color: var(--main);
+    text-decoration: none;
+}
+
+.list a:hover, .list a:active  {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.list img {
+    margin: 0 0.7em;
+    width: 3em;
+    float: left;
+}
+
+/* ADVERTENTIE ONDERAAN PAGINA HOME */
+
+.ad {
+    position: relative;
+    height: 14em;
+}
+
+.ad_content {
+    position: absolute;
+    top: 0.2em;
+    color: white;
+    margin-left: 0.7em;
+}
+
+.ad_content h2 {
+    color: white;
+    padding: 0;
+}
+
+.ad img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--main);
+}
+
+footer img {
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
