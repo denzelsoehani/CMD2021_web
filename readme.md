@@ -38,7 +38,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Content toevoegen ging erg goed. Ik vind het soms moeilijk om overzicht te houden in mijn CSS, maar tot nu toe gaat dat oke.
 
 **Screenshot(s):**
 
@@ -46,7 +46,6 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
 
 | Denzel | Gerrit | Jessie | Micky | Cesar |
 | --- | --- | --- | --- | --- |
