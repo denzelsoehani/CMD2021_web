@@ -1,12 +1,14 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
 }
 
 @font-face {
-  font-family: Metric;
-  src: url(fonts/Metric_Regular.ttf) format("ttf");
-  src: url(fonts/Metric_Regular.woff) format("woff");
+    font-family: Metric;
+    src: url(fonts/Metric_Regular.ttf) format("ttf");
+    src: url(fonts/Metric_Regular.woff) format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -46,24 +48,41 @@ h3 {
 }
 
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* HEADER */
 
 header {
     height: 3.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header img {
+header > img {
     width: 8em;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin: 0 0.6em;
+}
+
+header ul li > img {
+    width: 1.5em;
 }
 
 /* ALGEMENE LINK STIJLEN */
 
-a.link_button_main:link, a.link_button_main:visited {
+a.link_button_main:link,
+a.link_button_main:visited {
     color: white;
     background-color: var(--blue);
     padding: 0.5em 2em;
@@ -77,11 +96,13 @@ a.link_button_main:link, a.link_button_main:visited {
     display: inline-block;
 }
 
-a.link_button_main:hover, a.link_button_main:active {
+a.link_button_main:hover,
+a.link_button_main:active {
     background-color: var(--dark-blue);
 }
 
-a.link_button_secundair:link, a.link_button_secundair:visited {
+a.link_button_secundair:link,
+a.link_button_secundair:visited {
     color: var(--blue);
     background-color: white;
     padding: 0.5em 2em;
@@ -95,54 +116,83 @@ a.link_button_secundair:link, a.link_button_secundair:visited {
     display: inline-block;
 }
 
-a.link_button_secundair:hover, a.link_button_secundair:active {
+a.link_button_secundair:hover,
+a.link_button_secundair:active {
     color: var(--dark-blue);
     border-color: var(--dark-blue);
 }
 
-a.link_simple:link, a.link_simple:visited {
-    display: block;
+a.link_simple:link,
+a.link_simple:visited {
+    background: url(../images/Middel1.svg) no-repeat;
+    background-size: 0.8em;
+    background-position: left;
     color: var(--main);
     text-decoration: none;
     font-weight: bold;
+    padding-left: 1.2em;
 }
 
-a.link_simple:hover, a.link_simple:active {
+a.link_simple:hover,
+a.link_simple:active {
+    background: url(../images/Middel2.svg) no-repeat;
+    background-size: 0.8em;
+    background-position: left;
     color: var(--blue);
 }
 
 /* SHOWCASE MET GRIJZE BG STIJLEN */
 
-.gradient_block {
+main > section:first-of-type {
     display: block;
-    position: relative;
-    padding-bottom: 8em; /* 6em */
+    background-image: url("../images/home/header_iphone_12_series.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 30%;
+    background-color: var(--main);
 }
 
-.gradient_block_text {
-    background-color: var(--main);
+main > section:first-of-type > section {
     color: white;
     padding-left: 0.7em;
-    background: linear-gradient(0deg, rgba(51,51,51,1) 75%, rgba(51,51,51,0.2) 100%);
-    position: absolute;
-    bottom: 0;
+    padding-bottom: 1.5em;
+    background: linear-gradient(0deg, rgba(51, 51, 51, 1) 75%, rgba(51, 51, 51, 0.2) 100%);
     width: 100%;
 }
 
-.gradient_block_text h2{
+main > section:first-of-type > section h2,
+main > section:nth-of-type(2) > section > section h2 {
     color: white;
+    padding-top: 1.5em;
+}
+
+main > section:nth-of-type(2) > section {
+    display: block;
+    background-image: url("../images/home/swp.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 20%;
+    background-color: var(--green);
+}
+
+main > section:nth-of-type(2) > section > section {
+    color: white;
+    padding-left: 0.7em;
+    padding-bottom: 1.5em;
+    background: linear-gradient(0deg, rgba(0, 153, 0, 1) 75%, rgba(0, 153, 0, 0.2) 100%);
+    width: 100%;
 }
 
 /* IN PAGE NAV HOME */
 
-.inpage_nav {
+main > section:nth-of-type(2) ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 1em;
 }
 
-.inpage_nav li {
+main > section:nth-of-type(2) ul li {
     width: 47%;
     background-color: white;
     padding: 2em;
@@ -153,12 +203,12 @@ a.link_simple:hover, a.link_simple:active {
     flex-grow: 1;
 }
 
-.inpage_nav a {
+main > section:nth-of-type(2) ul a {
     text-decoration: none;
     color: var(--green);
 }
 
-.inpage_nav img {
+main > section:nth-of-type(2) ul img {
     display: block;
     width: 40%;
     margin-left: auto;
@@ -168,22 +218,20 @@ a.link_simple:hover, a.link_simple:active {
 
 /* SECTION & ARTIKELEN STIJLEN */
 
-.even {
+main > section:nth-of-type(2),
+main > section:nth-of-type(4),
+main > section:nth-of-type(6) {
     background-color: var(--light-grey);
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 0.7em;
-    padding-right: 0.7em;
+    padding: 1em 0.7em 1em 0.7em;
 }
 
 .oneven {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 0.7em;
-    padding-right: 0.7em;
+    padding: 1em 0.7em 1em 0.7em;
 }
 
-.highlight, .highlight_download {
+main > section:nth-of-type(3),
+main > section:nth-of-type(5),
+.highlight_download {
     padding: 0.7em;
 }
 
@@ -193,11 +241,14 @@ article {
     padding-bottom: 1.5em;
 }
 
-.news h3, .news p, .news a{
+main > section:nth-of-type(4) h3,
+main > section:nth-of-type(4) p,
+main > section:nth-of-type(4) a {
     margin: 0.7em 1em 0.7em 0.7em;
 }
 
-.highlight article {
+main > section:nth-of-type(3) article,
+main > section:nth-of-type(5) article {
     text-align: center;
     border-color: lightgrey;
     border-style: solid;
@@ -205,7 +256,8 @@ article {
     padding: 3em;
 }
 
-.img_article {
+main > section:nth-of-type(3) article img,
+main > section:nth-of-type(5) article img {
     padding: 0 3em;
 }
 
@@ -217,7 +269,7 @@ article {
     padding: 0.7em;
 }
 
-p.speed{
+p.speed {
     margin-top: -1.2em;
     font-size: 1.375em;
     font-weight: 100;
@@ -225,55 +277,60 @@ p.speed{
 
 /* ZAKELIJKE LINKS */
 
-.list {
+main > section:nth-of-type(6) ul {
     background-color: white;
     margin-bottom: 1em;
     padding: 0.5em 0;
 }
 
-.list li {
+main > section:nth-of-type(6) ul > li {
     margin: 1.5em 0.7em;
     padding-bottom: 0.7em;
     border-bottom: 0.063em solid;
     border-color: lightgrey;
 }
 
-.list a:link, .list a:visited {
+main > section:nth-of-type(6) a:link,
+main > section:nth-of-type(6) a:visited {
     color: var(--main);
     text-decoration: none;
 }
 
-.list a:hover, .list a:active  {
+main > section:nth-of-type(6) a:hover,
+main > section:nth-of-type(6) a:active {
     color: var(--blue);
     text-decoration: none;
 }
 
-.list img {
-    margin: 0 0.7em;
+main > section:nth-of-type(6) img {
     width: 3em;
     float: left;
 }
 
+main > section:nth-of-type(6) > ul img {
+    margin: 0 0.7em;
+}
+
 /* ADVERTENTIE ONDERAAN PAGINA HOME */
 
-.ad {
+main > section:nth-of-type(6) > section {
     position: relative;
     height: 14em;
 }
 
-.ad_content {
+main > section:nth-of-type(6) > section > section {
     position: absolute;
     top: 0.2em;
     color: white;
     margin-left: 0.7em;
 }
 
-.ad_content h2 {
+main > section:nth-of-type(6) > section > section h2 {
     color: white;
     padding: 0;
 }
 
-.ad img {
+main > section:nth-of-type(6) > section img {
     width: 100%;
     height: 100%;
     object-fit: cover;

@@ -1,5 +1,5 @@
 # Procesverslag
-**Auteur:** Denzel Soehani
+**Auteur:** -jouw naam-
 
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
@@ -38,7 +38,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
-Content toevoegen ging erg goed. Ik vind het soms moeilijk om overzicht te houden in mijn CSS, maar tot nu toe gaat dat oke.
+-dit ging goed & dit was lastig-
 
 **Screenshot(s):**
 
@@ -46,12 +46,13 @@ Content toevoegen ging erg goed. Ik vind het soms moeilijk om overzicht te houde
 
 ### Agenda voor meeting
 
+-samen met je groepje opstellen-
 
-| Denzel | Gerrit | Jessie | Micky | Cesar |
-| --- | --- | --- | --- | --- |
-|Selectoren |De dingen die ik wil uitwerken|Background-image|Breakdown schetsen|Desktop V1 ipv Telefoon V1|
-|Navigatie |De uitbreiding naar responsive|Transitions tussen fixed en relative header op scrol|Flexbox|Alle content?|
-|Orginele website aanpassen|Hoe neem ik huisstijl over|svg image|Lettertypes|Image size, Voorbeeld vorig jaar|
+| student 1      | student 2          | student 3    | student 4        |
+| ---            | ---                | ---          | ---              |
+| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+| ...            | ...                | ...          | ...              |
 
 ### Verslag van meeting
 
