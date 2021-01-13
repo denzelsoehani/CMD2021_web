@@ -85,8 +85,20 @@
 
             <h2>Glasvezel van KPN</h2>
             <p>Met glasvezel van KPN kun je razendsnel down- en uploaden. Het mooie van glasvezel? Het is razendsnel, je hoeft er niets extra's voor te doen en kost hetzelfde als Standaard Internet. Check direct of er glasvezel beschikbaar is op jouw adres.</p>
-            <a class="link_button_main" href="https://www.kpn.com/">Bekijk glasvezel</a>
 
+            <form>
+               <div><div>
+                <label for="postcode">Postcode:</label>
+                <input type="text" id="postcode" name="postcode" value="1234 AB">
+                </div><div>
+                <label for="huisnummer">Huisnummer:</label>
+                <input type="text" id="huisnummer" name="huisnummer" value="10">
+                </div><div>
+                <label for="toevoeging">Toevoeging:</label>
+                <input type="text" id="toevoeging" name="toevoeging" value="a">
+                </div></div>
+                <a class="link_button_main" href="#">Check beschikbaarheid</a>
+            </form>
             <img src="images/internet/gigabit_promo.jpg" alt="Tot 1 Gigabit per seconde download en 500 megabit per seconde upload">
 
         </section>
@@ -106,7 +118,6 @@
                 <h3>Internetsnelheid tot 1 Gbit/s</h3>
                 <p>Kies uit 50, 100, 200, 500 Mbit/s en 1 Gbit/s. Afhankelijk van de mogelijkheden op jouw adres.</p>
                 <a class="link_simple" href="https://www.kpn.com/">Bekijk beschikbaarheid</a>
-                <a class="link_simple" href="https://www.kpn.com/">Heb je al KPN Internet? Verhoog je internetsnelheid</a>
             </article>
 
             <article>
@@ -154,7 +165,7 @@
                 <h3>Combineer Internet en Mobiel</h3>
                 <p class="speed">en krijg tot € 7,50 korting</p>
                 <p>Combineer Internet en Mobiel van KPN en je krijgt elke maand € 5,00 korting. En nog eens € 2,50 korting extra als je de 20 GB databundel of Unlimited Data kiest.</p>
-                <a class="link_button_secundair" href="https://www.kpn.com/">Bekijk Internet en Mobiel</a>
+                <a class="link_button_secundair" href="https://www.kpn.com/">Bekijk Internet en Mobiel</a><br>
                 <a class="link_simple" href="https://www.kpn.com/">Meer over KPN Hussel</a>
             </article>
 
@@ -170,22 +181,26 @@
         <section>
             <h2>Veelgestelde vragen</h2>
             <article>
-                <h3 id="faq">Hoeveel internetsnelheid (Mbit/s) heb ik nodig?</h3>
+                <h3 id="faq"><button>Hoeveel internetsnelheid (Mbit/s) heb ik nodig?</button></h3>
                 <div id="toggle">
                     <p>Welke internetsnelheid jij nodig hebt, is afhankelijk van met hoeveel personen je het tegerlijktijd gebruikt. Ook heb je voor 4K tv-kijken meer internetsnelheid nodig dan voor e-mailen.</p>
                     <a class="link_simple" href="https://www.kpn.com/">Meer over internetsnelheid</a>
                 </div>
             </article>
             <article>
-                <h3 id="faq2">Hoe verhoog ik mijn internetsnelheid bovenop mijn abonnement?</h3>
+                <h3 id="faq2"><button>Hoe verhoog ik mijn internetsnelheid bovenop mijn abonnement?</button></h3>
                 <div id="toggle2">
                     <p>Verhoog je internetsnelheid met de Internetversneller, die werkt zo:</p>
-                    <ul><li><strong>Bovenop je abonnement</strong>: Je koopt dit product als je internet van KPN hebt.</li><li><strong>Tot 1 Gbit/s</strong>: Afhankelijk van je adres versnel je de verbinding tot max. 1 Gbit/s downloaden &amp; 500 Mbit/s uploaden.</li><li><strong>Maandelijks wijzigen</strong>: Sneller Internet kun je maandelijks aan- en uitzetten.</li></ul>
+                    <ul>
+                        <li><strong>Bovenop je abonnement</strong>: Je koopt dit product als je internet van KPN hebt.</li>
+                        <li><strong>Tot 1 Gbit/s</strong>: Afhankelijk van je adres versnel je de verbinding tot max. 1 Gbit/s downloaden &amp; 500 Mbit/s uploaden.</li>
+                        <li><strong>Maandelijks wijzigen</strong>: Sneller Internet kun je maandelijks aan- en uitzetten.</li>
+                    </ul>
                     <a class="link_simple" href="https://www.kpn.com/">Ga naar de internetversneller</a>
                 </div>
             </article>
             <article>
-                <h3 id="faq3">Krijg ik Glasvezel internet?</h3>
+                <h3 id="faq3"><button>Krijg ik Glasvezel internet?</button></h3>
                 <div id="toggle3">
                     <p>Doe de postcodecheck om na te gaan of glasvezel op jouw adres mogelijk is. Wanneer dit het geval is, leveren we jouw pakket gratis via dit stabiele netwerk.</p>
                     <a class="link_simple" href="https://www.kpn.com/">Doe de glasvezelcheck</a>

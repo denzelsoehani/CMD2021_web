@@ -7,18 +7,25 @@
 
 @font-face {
     font-family: Metric;
-    src: url(../fonts/Metric_Regular.ttf) format("ttf");
-    src: url(../fonts/Metric_Regular.woff) format("woff");
+    src: url(../fonts/KPNMetricWeb-Light.eot) format("eot");
+    src: url(../fonts/KPNMetricWeb-Light.woff) format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+@font-face {
+    font-family: Metric;
+    src: url(../fonts/KPNMetricWeb-Bold.eot) format("eot");
+    src: url(../fonts/KPNMetricWeb-Bold.woff) format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
 
 body {
     font-family: 'Metric', sans-serif;
     --main: #333333;
     --blue: #009AFE;
+    --light-blue: #DBEBF9;
     --dark-blue: #0377CC;
     --light-grey: #F3F3F3;
     --green: #009900;
@@ -372,9 +379,42 @@ main > section:nth-of-type(6) > div a {
     color: white;
 }
 
+/*FORM*/
+form {
+    background-color: var(--light-blue);
+    padding: 3em 1em;
+}
+
+form > div {
+    font-weight: bold;
+    display: flex;
+}
+
+form > div label {
+    font-size: 1.2em;
+}
+
+form > div input {
+    font-size: 1em;
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border: 1px solid lightgrey;
+}
+
+form > div > div {
+    margin: 0.5em;
+}
+
 /*TOGGLE FAQ*/
 
-main.internet > section:nth-of-type(7){
+.visible {
+    opacity: 0;
+    font-size: 0;
+    height: 0;
+}
+
+main.internet > section:nth-of-type(7) {
     padding: 0.7em;
     margin-bottom: 1.5em;
 }
@@ -386,6 +426,18 @@ main.internet > section:nth-of-type(7) > article {
     padding-bottom: 0;
     margin: 0;
 }
+
+main.internet > section:nth-of-type(7) > article h3 button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    text-align: left;
+    font: inherit;
+    cursor: pointer;
+}
+
+/*https://stackoverflow.com/questions/2460100/remove-the-complete-styling-of-an-html-button-submit*/
 
 main.internet > section:nth-of-type(7) > article:last-of-type {
     border-style: solid none solid none;
@@ -403,17 +455,9 @@ main.internet > section:nth-of-type(7) > article > h3 {
 }
 
 main.internet > section:nth-of-type(7) > article > div {
+    height: auto;
     margin-bottom: 1em;
-}
-
-.visible {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
+    transition-duration: 0.5s;
 }
 
 main.internet > section:nth-of-type(7) > article > div > ul {
