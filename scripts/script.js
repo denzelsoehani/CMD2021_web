@@ -56,14 +56,4 @@ if (searchBar) {
 }
 
 
-
-//queryselector ALL
-//
-//button.addEventListener("click", function(event) {
-//    event.target
-//  element.classList.toggle("visible");
-//});
-
-
-
 //https://css-tricks.com/video-screencasts/150-hey-designers-know-one-thing-javascript-recommend/
