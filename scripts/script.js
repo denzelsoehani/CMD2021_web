@@ -2,13 +2,14 @@
 var button = document.getElementById("faq");
 var element = document.getElementById("toggle");
 
-element.classList.add("visible");
+if (element) {
+    element.classList.add("visible");
 
-button.addEventListener("click", function (event) {
-    event.target
-    element.classList.toggle("visible");
-});
-
+    button.addEventListener("click", function (event) {
+        event.target
+        element.classList.toggle("visible");
+    });
+}
 
 
 
@@ -16,11 +17,13 @@ button.addEventListener("click", function (event) {
 var button2 = document.getElementById("faq2");
 var element2 = document.getElementById("toggle2");
 
-element2.classList.add("visible");
+if (element2) {
+    element2.classList.add("visible");
 
-button2.addEventListener("click", function () {
-    element2.classList.toggle("visible");
-});
+    button2.addEventListener("click", function () {
+        element2.classList.toggle("visible");
+    });
+}
 
 
 
@@ -29,11 +32,13 @@ button2.addEventListener("click", function () {
 var button3 = document.getElementById("faq3");
 var element3 = document.getElementById("toggle3");
 
-element3.classList.add("visible");
+if (element3) {
+    element3.classList.add("visible");
 
-button3.addEventListener("click", function () {
-    element3.classList.toggle("visible");
-});
+    button3.addEventListener("click", function () {
+        element3.classList.toggle("visible");
+    });
+}
 
 
 
@@ -41,11 +46,14 @@ button3.addEventListener("click", function () {
 var searchButton = document.getElementById("searchbutton");
 var searchBar = document.getElementById("search");
 
-searchBar.classList.add("hide");
+if (searchBar) {
 
-searchButton.addEventListener("click", function () {
-    searchBar.classList.toggle("hide");
-});
+    searchBar.classList.add("hide");
+
+    searchButton.addEventListener("click", function () {
+        searchBar.classList.toggle("hide");
+    });
+}
 
 
 

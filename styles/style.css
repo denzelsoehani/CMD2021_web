@@ -34,6 +34,10 @@ body {
     margin: 0;
 }
 
+form input {
+    font-family: 'Metric', sans-serif;
+}
+
 p {
     line-height: 1.5em;
     font-size: 1.2em;
@@ -74,6 +78,24 @@ ul {
 
 /* https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/#:~:text=visually%2Dhidden%20class%20is%20applied,focus%20indicator%20had%20gone%20to. */
 
+/*BACK TO TOP*/
+
+.backtotop {
+    position: fixed;
+    padding: 0.7em;
+    bottom: 0;
+    right: 0;
+    width: 2em;
+    height: 2.2em;
+    margin: 0em 0.5em 0.5em 0em;
+    background-color: var(--green);
+    border-radius: 0.5em;
+}
+
+.backtotop img {
+    margin-bottom: 1em;
+}
+
 /* HEADER */
 
 header > div {
@@ -105,15 +127,33 @@ header ul li {
     margin: 0 0.6em;
 }
 
-header ul li > img {
+/*https://stackoverflow.com/questions/2460100/remove-the-complete-styling-of-an-html-button-submit*/
+
+header ul li button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+header ul li button > img {
     width: 1.5em;
 }
 
 /*SEARCH*/
 
+.hide {
+    height: 0;
+    visibility: hidden;
+    font-size: 0.7em;
+}
+
 form#search {
-    margin-top: 3.5em;
     background-color: var(--light-blue);
+    margin-top: 3.5em;
     padding: 0.5em;
 }
 
@@ -123,13 +163,6 @@ form#search > input {
     padding: 0.5em;
     margin: 0.5em 0;
     border: 0.15em solid lightgrey;
-}
-
-.hide {
-    width: 0;
-    height: 0;
-    padding: 0;
-    margin: 0;
 }
 
 /* ALGEMENE LINK STIJLEN */

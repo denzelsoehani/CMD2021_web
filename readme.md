@@ -16,11 +16,12 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+Over het algemeen vond ik dit een hele leuke opdracht. Ik heb mezelf echt kunnen uitdagen en had nooit gedacht dat ik zo'n product kon opleveren. Ben daar wel trots op. Vond vooral de elementen selecteren in het begin erg lastig. Ik had overal classes voor en dat ging nog wel eens fout. Uiteindelijk heb ik dit meer onder de knie gekregen, maar het is zeker iets waar ik in de toekomst nog wel aan wil werken. Ik vond het ook rete lastig dat al mijn JS kennis echt enorm was weggezakt, ondanks dat we daar vorig jaar een heel vak over hebben gehad. Dit moest ik echt weer ophalen, terwijl ik vorig jaar zo een lap code kon schrijven wat gewoon werkte. Maargoed, al met al volgensmij een prima resultaat neergezet.
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
+<img src="images/readme/final_index.png" alt="index">
+<img src="images/readme/final_internet.png" alt="internet">
 
 
 
