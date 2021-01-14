@@ -4,9 +4,9 @@ var element = document.getElementById("toggle");
 
 element.classList.add("visible");
 
-button.addEventListener("click", function(event) {
+button.addEventListener("click", function (event) {
     event.target
-  element.classList.toggle("visible");
+    element.classList.toggle("visible");
 });
 
 
@@ -18,8 +18,8 @@ var element2 = document.getElementById("toggle2");
 
 element2.classList.add("visible");
 
-button2.addEventListener("click", function() {
-  element2.classList.toggle("visible");
+button2.addEventListener("click", function () {
+    element2.classList.toggle("visible");
 });
 
 
@@ -31,8 +31,20 @@ var element3 = document.getElementById("toggle3");
 
 element3.classList.add("visible");
 
-button3.addEventListener("click", function() {
-  element3.classList.toggle("visible");
+button3.addEventListener("click", function () {
+    element3.classList.toggle("visible");
+});
+
+
+
+
+var searchButton = document.getElementById("searchbutton");
+var searchBar = document.getElementById("search");
+
+searchBar.classList.add("hide");
+
+searchButton.addEventListener("click", function () {
+    searchBar.classList.toggle("hide");
 });
 
 

@@ -76,7 +76,7 @@ ul {
 
 /* HEADER */
 
-header {
+header > div {
     height: 3.5em;
     display: flex;
     justify-content: space-between;
@@ -89,7 +89,7 @@ header {
     border-color: var(--light-grey);
 }
 
-header > img {
+header > div > img {
     margin: auto 0;
     padding: 0;
     height: 100%;
@@ -109,8 +109,27 @@ header ul li > img {
     width: 1.5em;
 }
 
-main {
+/*SEARCH*/
+
+form#search {
     margin-top: 3.5em;
+    background-color: var(--light-blue);
+    padding: 0.5em;
+}
+
+form#search > input {
+    font-size: 1em;
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border: 0.15em solid lightgrey;
+}
+
+.hide {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
 }
 
 /* ALGEMENE LINK STIJLEN */
@@ -379,30 +398,30 @@ main > section:nth-of-type(6) > div a {
     color: white;
 }
 
-/*FORM*/
-form {
+/*FORM POSTAL CODE CHECK*/
+form#check {
     background-color: var(--light-blue);
     padding: 3em 1em;
 }
 
-form > div {
+form#check > div {
     font-weight: bold;
     display: flex;
 }
 
-form > div label {
+form#check > div label {
     font-size: 1.2em;
 }
 
-form > div input {
+form#check > div input {
     font-size: 1em;
     width: 100%;
     padding: 0.5em;
     margin: 0.5em 0;
-    border: 1px solid lightgrey;
+    border: 0.15em solid lightgrey;
 }
 
-form > div > div {
+form#check > div > div {
     margin: 0.5em;
 }
 
